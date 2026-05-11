@@ -20,7 +20,11 @@
       <a-plane position="-1 0 0" rotation="0 -270 0" width="2" height="4" color="blue"></a-plane>
       <a-plane position="0 2 0" rotation="-270 0 0" width="2" height="2" color="blue"></a-plane>
       <a-sky hide-on-enter-ar src="#Fondo"></a-sky> <!-- El cielo se quita en realidad aumentada-->
+      <a-entity position="0 1.6 0" rotation="0 0 0"> 
       <a-camera wasd-controls="acceleration:100; fly:true" look-controls position="0 1.6 0"></a-camera> <!-- Esta es por defecto a la altura de los ojos -->
+      <a-entiy oculus-touch-controls="hand: right"></a-entiy>
+      <a-entiy oculus-touch-controls="hand: left"></a-entiy>
+      </a-entity>
     </a-scene>
   </body>
 </html>
