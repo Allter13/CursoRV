@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.7.0/dist/aframe-extras.min.js"></script>
+  </head>
+  <body>
+    <a-scene xr-mode-ui="XRMode: xr"><!-- Esta es para poder verlo en realidad aumentada-->
+      <a-assets>
+        <img id="fractal" src="Romanesco_broccoli_texture.jpg">
+        <img id="madera" src="Wood_(126508819).jpeg">
+        <img id="Fondo" src="B.jpg">
+      </a-assets>
+      
+      <a-sphere position="0 1.25 -5" radius="1.25" color="yellow" src="#fractal"></a-sphere>
+      
+      <a-sky hide-on-enter-ar color="blue"></a-sky> <!-- El cielo se quita en realidad aumentada-->
+      <a-entity position="0 1.6 0" rotation="0 0 0"> 
+      <a-camera wasd-controls="acceleration:100; fly:true" look-controls position="0 1.6 0"></a-camera> <!-- Esta es por defecto a la altura de los ojos -->
+      <a-entity oculus-touch-controls="hand: right"></a-entity>
+      <a-entity oculus-touch-controls="hand: left"></a-entity>
+      </a-entity>
+    </a-scene>
+  </body>
+</html>
