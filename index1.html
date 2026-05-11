@@ -3,7 +3,7 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene>
+    <a-scene xr-mode-ui="XRMode: xr">
       <a-assets>
         <img id="fractal" src="Romanesco_broccoli_texture.jpg">
         <img id="madera" src="Wood_(126508819).jpeg">
@@ -19,7 +19,7 @@
       <a-plane position="1 0 0" rotation="0 -90 0" width="2" height="4" color="blue"></a-plane>
       <a-plane position="-1 0 0" rotation="0 -270 0" width="2" height="4" color="blue"></a-plane>
       <a-plane position="0 2 0" rotation="-270 0 0" width="2" height="2" color="blue"></a-plane>
-      <a-sky  src="#Fondo"></a-sky>
+      <a-sky hide-on-enter-ar src="#Fondo"></a-sky>
     </a-scene>
   </body>
 </html>
