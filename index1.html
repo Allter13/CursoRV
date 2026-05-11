@@ -3,7 +3,7 @@
     <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene xr-mode-ui="XRMode: xr">
+    <a-scene xr-mode-ui="XRMode: xr"><!-- Esta es para poder verlo en realidad aumentada-->
       <a-assets>
         <img id="fractal" src="Romanesco_broccoli_texture.jpg">
         <img id="madera" src="Wood_(126508819).jpeg">
@@ -19,7 +19,8 @@
       <a-plane position="1 0 0" rotation="0 -90 0" width="2" height="4" color="blue"></a-plane>
       <a-plane position="-1 0 0" rotation="0 -270 0" width="2" height="4" color="blue"></a-plane>
       <a-plane position="0 2 0" rotation="-270 0 0" width="2" height="2" color="blue"></a-plane>
-      <a-sky hide-on-enter-ar src="#Fondo"></a-sky>
+      <a-sky hide-on-enter-ar src="#Fondo"></a-sky> <!-- El cielo se quita en realidad aumentada-->
+      <a-camera wasd-controls look-controls position="0 1.6 0"></a-camera> <!-- Esta es por defecto a la altura de los ojos -->
     </a-scene>
   </body>
 </html>
