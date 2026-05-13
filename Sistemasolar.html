@@ -13,7 +13,11 @@
       
       <a-sphere position="0 1.25 -5" radius="2" color="yellow" src="#fractal">
 
-        <a-sphere position="4 1.25 -5" radius="0.25" color="red" src="#fractal"></a-sphere>
+        <a-sphere position="4 1.25 -5" radius="0.25" color="red" src="#fractal">
+
+        <a-sphere position="4 1.25 -5" radius="0.25" color="white" src="#fractal"></a-sphere>
+
+        </a-sphere>
         <a-sphere position="7 1.25 -5" radius="0.25" color="brown" src="#fractal"></a-sphere>
         <a-sphere position="10 1.25 -5" radius="0.25" color="blue" src="#fractal"></a-sphere>
 
@@ -22,7 +26,7 @@
 
       </a-sphere>
       
-      <a-sky hide-on-enter-ar src="U.jpeg"></a-sky> <!-- El cielo se quita en realidad aumentada-->
+      <a-sky hide-on-enter-ar color="black"></a-sky> <!-- El cielo se quita en realidad aumentada-->
       <a-entity position="0 1.6 0" rotation="0 0 0"> 
       <a-camera wasd-controls="acceleration:100; fly:true" look-controls position="0 1.6 0"></a-camera> <!-- Esta es por defecto a la altura de los ojos -->
       <a-entity oculus-touch-controls="hand: right"></a-entity>
