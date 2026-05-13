@@ -8,7 +8,7 @@
       <a-assets>
         <img id="fractal" src="Romanesco_broccoli_texture.jpg">
         <img id="S" src="S.jpeg">
-        <img id="Fondo" src="B.jpg">
+        <img id="Fondo" src="U.jpeg">
       </a-assets>
       
       <a-sphere position="0 1.25 -5" radius="2" color="yellow" src="#S" animation="property: rotation; to: 0 360 0; dur: 18000;
@@ -27,7 +27,7 @@
 
       </a-sphere>
       
-      <a-sky hide-on-enter-ar color="black"></a-sky> <!-- El cielo se quita en realidad aumentada-->
+      <a-sky hide-on-enter-ar src="#Fondo"></a-sky> <!-- El cielo se quita en realidad aumentada-->
       <a-entity position="0 1.6 0" rotation="0 0 0"> 
       <a-camera wasd-controls="acceleration:100; fly:true" look-controls position="0 1.6 0"></a-camera> <!-- Esta es por defecto a la altura de los ojos -->
       <a-entity oculus-touch-controls="hand: right"></a-entity>
